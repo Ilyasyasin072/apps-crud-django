@@ -12,7 +12,7 @@ def Home(request):
         if customers.is_valid():
             customers.save()
             messages.success(request, f'Customers have been created!')
-            return redirect('customers_list')
+            return redirect('customer_list')
     else:
         customers = CreateCustomerForm()
 
