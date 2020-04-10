@@ -1,0 +1,27 @@
+{% extends "customer/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="col-md-12">
+        <form action="" method="POST">
+            {% csrf_token %}
+            <fieldset class="form-group">
+                <legend class="border-bottom mb-4">Form Create Customers</legend>
+              <article class="media content-section">
+                <div class="media-body">
+                  {{ customers|crispy }}
+                </div>
+              </article>
+            </fieldset>
+            <div class="form-group">
+                <button class="btn btn-outline btn-info">Save</button>
+                <a class="btn btn-outline btn-default" href="{% url 'customer_list' %}">Back</a>
+            </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}

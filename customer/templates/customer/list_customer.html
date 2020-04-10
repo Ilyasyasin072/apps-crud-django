@@ -1,0 +1,48 @@
+{% extends "customer/base.html" %}
+{% block content %}
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="col-md-12">
+          <fieldset class="form-group">
+          <table class="table table-bordered" align="center" id="table_id">
+            <thead>
+              <tr>
+                <th>Customers</th>
+                <th>Address</th>
+                <th>Phone</th>
+                <td>Action</td>
+              </tr>
+            </thead>
+            <tbody>
+            {% for employee in customers %}
+            <tr>
+              <td>{{ employee.name_customers }}</td>
+              <td>{{ employee.address_customers }}</td>
+              <td>{{ employee.phone }}</td>
+              <td>
+                <form action="">
+                   <form action="" method="post">
+                    <button class="btn btn-sm btn-primary">edit</button>
+                    {% csrf_token %}
+                    <button class="btn btn-sm btn-danger">Hapus</button>
+                </form>
+                </form>
+              </td>
+            </tr>
+        {% endfor %}
+            </tbody>
+          </table>
+          </fieldset>
+        </div>
+      </div>
+    </div>
+     <div class="container">
+        <div class="row">
+          <div class="col">
+            <a class="btn btn-success btn-sm" href="{% url 'customer' %}">Create Customers</a>
+          </div>
+        </div>
+      </div>
+  </div>
+{% endblock content %}

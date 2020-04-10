@@ -14,11 +14,11 @@
             {% csrf_token %}
             <fieldset class="form-group">
                 <legend class="border-bottom mb-4">Profile Info</legend>
-                {{ user_form|crispy }}
-                {{ profile_form|crispy }}
+                {{ u_form|crispy }}
+                {{ p_form|crispy }}
             </fieldset>
             <div class="form-group">
-                <button class="btn btn-outline btn-info">Sign up</button>
+                <button class="btn btn-outline btn-info">Save</button>
             </div>
         </form>
     </div>
