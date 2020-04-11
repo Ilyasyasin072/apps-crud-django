@@ -1,38 +1,39 @@
 {% extends "customer/base.html" %}
+{% load crispy_forms_tags %}
 {% block content %}
   <div class="container">
     <div class="row">
       <div class="col">
         <div class="col-md-12">
           <fieldset class="form-group">
-          <table class="table table-bordered" align="center" id="table_id">
-            <thead>
+            <table class="table table-bordered" align="center" id="table_id">
+              <thead>
+                <tr>
+                  <th>Customers</th>
+                  <th>Address</th>
+                  <th>Phone</th>
+                  <td>Action</td>
+                </tr>
+              </thead>
+              <tbody>
+              {% for employee in customers %}
               <tr>
-                <th>Customers</th>
-                <th>Address</th>
-                <th>Phone</th>
-                <td>Action</td>
+                <td>{{ employee.name_customers }}</td>
+                <td>{{ employee.address_customers }}</td>
+                <td>{{ employee.phone }}</td>
+                <td>
+                  <form action="">
+                     <form action="" method="post">
+                      <button class="btn btn-sm btn-primary">edit</button>
+                      {% csrf_token %}
+                      <button class="btn btn-sm btn-danger">Hapus</button>
+                  </form>
+                  </form>
+                </td>
               </tr>
-            </thead>
-            <tbody>
-            {% for employee in customers %}
-            <tr>
-              <td>{{ employee.name_customers }}</td>
-              <td>{{ employee.address_customers }}</td>
-              <td>{{ employee.phone }}</td>
-              <td>
-                <form action="">
-                   <form action="" method="post">
-                    <button class="btn btn-sm btn-primary">edit</button>
-                    {% csrf_token %}
-                    <button class="btn btn-sm btn-danger">Hapus</button>
-                </form>
-                </form>
-              </td>
-            </tr>
-        {% endfor %}
-            </tbody>
-          </table>
+              {% endfor %}
+              </tbody>
+            </table>
           </fieldset>
         </div>
       </div>
@@ -41,8 +42,49 @@
         <div class="row">
           <div class="col">
             <a class="btn btn-success btn-sm" href="{% url 'customer' %}">Create Customers</a>
+<!--            <a class="btn btn-success btn-sm" data-toggle="modal" data-target="#staticBackdrop">Create Customers</a>-->
           </div>
         </div>
       </div>
   </div>
+
+<!--&lt;!&ndash; Button trigger modal &ndash;&gt;-->
+<!--  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">-->
+<!--    Launch static backdrop modal-->
+<!--  </button>-->
+
+  <!-- Modal -->
+<!--  <div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">-->
+<!--    <div class="modal-dialog  modal-dialog-centered" role="document">-->
+<!--      <div class="modal-content">-->
+<!--        <div class="modal-header">-->
+<!--          <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>-->
+<!--          <button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+<!--            <span aria-hidden="true">&times;</span>-->
+<!--          </button>-->
+<!--        </div>-->
+<!--        <div class="modal-body">-->
+<!--          <form action="" method="POST">-->
+<!--            {% csrf_token %}-->
+<!--            <fieldset class="form-group">-->
+<!--                <legend class="border-bottom mb-4">Form Create Customers</legend>-->
+<!--              <article class="media content-section">-->
+<!--                <div class="media-body">-->
+<!--                  {{ u_forms|crispy }}-->
+<!--                </div>-->
+<!--              </article>-->
+<!--            </fieldset>-->
+<!--            <div class="form-group">-->
+<!--                <button class="btn btn-outline btn-info">Save</button>-->
+<!--                <a class="btn btn-outline btn-default" href="{% url 'customer_list' %}">Back</a>-->
+<!--            </div>-->
+<!--        </form>-->
+<!--        </div>-->
+<!--        <div class="modal-footer">-->
+<!--          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
+<!--          <button type="button" class="btn btn-primary">Understood</button>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
 {% endblock content %}

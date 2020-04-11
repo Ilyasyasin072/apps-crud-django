@@ -24,9 +24,11 @@ def Home(request):
 
 @login_required
 def List(request):
-
+    customers = CreateCustomerForm()
     context = {
-        'customers': Customers.objects.all()
+        'customers': Customers.objects.all(),
+        'u_forms': customers
     }
     return render(request, 'customer/list_customer.html', context)
+
 

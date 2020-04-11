@@ -18,7 +18,9 @@ from django.urls import path, include
 from users import views as user_views
 from django.contrib.auth import views as auth_views
 from customer import views as customer_views
-from customer import  views as customer_list_views
+from customer import views as customer_list_views
+from employee import views as views_employee
+from blog import views as views_blog
 from django.conf import settings
 from django.conf.urls.static import static
 
@@ -30,7 +32,11 @@ urlpatterns = [
     path('logout/', auth_views.LogoutView.as_view(template_name='users/logout.html'), name="logout"),
     path(r'profile/', user_views.profile, name="profile"),
     path(r'customer/', customer_views.Home, name="customer"),
-    path(r'customer_list/', customer_list_views.List, name="customer_list")
+    path(r'customer_list/', customer_list_views.List, name="customer_list"),
+    path('crud/', views_employee.EmployeeView.as_view(), name='crud_ajax'),
+    path('ajax/crud/create/', views_employee.CreateCrudUser.as_view(), name='crud_ajax_create'),
+    path(r'dashboard', views_blog.Dashboard, name="dashboard")
+
 ]
 
 # configuration upload images

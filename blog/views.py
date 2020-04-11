@@ -34,3 +34,7 @@ def home(request):
 @login_required
 def about(request):
     return render (request, 'blog/about.html', {'title': 'about'})
+
+
+def Dashboard(request):
+    return render(request, 'blog/dashboard.html')

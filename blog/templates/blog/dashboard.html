@@ -1,0 +1,62 @@
+{% extends "blog/base_dashboard.html" %}
+{% block content %}
+<style>
+
+  .container-data {
+    padding-top: 100px;
+    box-shadow:  0 4px 8px 0 rgba(0,0,0,0.1);
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .title {
+    margin-left:40px;
+    font-family: Arial, sans-serif;
+    color:black;
+  }
+  .title2 {
+    margin-left:40px;
+    font-family: Arial, sans-serif;
+  }
+  .dashboard {
+    margin-right: 20px;
+    border-radius: 8px;
+    padding-top: 70px;
+    width: 90%;
+  }
+</style>
+  <div class="container-data">
+    <div class="row">
+      <div class="col-md-6">
+        <strong><h1 class="title">Mendefinisikan kebutuhan</h1></strong>
+        <br>
+          <h5 class="title2">
+            Aplikasi yang akan dibuat nantinya akan di jalankan pada platform apa ?
+            Contoh, aplikasi yang kita buat ini akan digunakan pada platform web. Maka nantinya program akan dijalankan
+            pada komputer ber os : windows versi berapa, linux, mac os dan lainnya dengan browser tertentu. Selain itu
+            kita juga butuh komputer dan tools lainnya untuk membuat programnya.</h5>
+        <br>
+        <strong><h1 class="title">Merancang flowchart</h1></strong>
+        <br>
+          <h5 class="title2">
+            Setelah kebutuhan program sudah terpenuhi. Kita buat alur programmnya.
+            Kebanyakan programmer membuat flowchart terlebih dahulu sebelum membuat
+            sebuah program aplikasi</h5>
+        <strong><h1 class="title">Merancang flowchart</h1></strong>
+        <br>
+          <h5 class="title2">
+            Alur sudah terbentuk. Saatnya mengubah flowchart menjadi program menggunakan bahasa pemrograman (kode-kode program) tertentu</h5>
+        <strong><h1 class="title">Merancang flowchart</h1></strong>
+        <br>
+          <h5 class="title2">
+            Debug adalah proses mencari kesalahan dari program yang sudah ditulis.</h5>
+        <br>
+          <h5 class="title2">
+            Selanjutnya kita akan menguji program yang sudah jadi ke pengguna. Biasanya sebelum dirilis ke publik. Program dirilis dalam versi beta</h5>
+      </div>
+      <div class="col-md-6">
+        <img class="dashboard" src="" alt="" src="/media/dashboard.svg">
+      </div>
+    </div>
+  </div>
+
+{% endblock content %}
