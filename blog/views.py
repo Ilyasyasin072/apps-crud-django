@@ -31,7 +31,7 @@ def home(request):
 
 
 # Mendefinisikan function About
-@login_required
+# @login_required
 def about(request):
     return render (request, 'blog/about.html', {'title': 'about'})
 
