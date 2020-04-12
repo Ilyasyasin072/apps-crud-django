@@ -3,12 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="d99a51f3-8349-4ea1-97a3-0b93539dc4ef" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/templates/blog/base_dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/base_dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/templates/blog/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/dashboard.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/templates/layout/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/layout/navbar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/templates/customer/list_customer.html" beforeDir="false" afterPath="$PROJECT_DIR$/customer/templates/customer/list_customer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/customer/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/dashboard.svg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,15 +26,17 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/media" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/blog/static/blog" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\alian\Desktop\app-django\media" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\alian\Desktop\app-django\blog\templates\layout" />
       <recent name="C:\Users\alian\Desktop\app-django\blog\static\blog" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\alian\Desktop\app-django\blog\static\blog" />
+      <recent name="C:\Users\alian\Desktop\app-django\blog\templates\css" />
+      <recent name="C:\Users\alian\Desktop\app-django\media" />
     </key>
   </component>
   <component name="SvnConfiguration">
