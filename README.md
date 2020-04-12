@@ -1,8 +1,19 @@
 # Apps NgodingYuk!! with Django And Database Postgres
 ## plugin support apps ngodingyukk!
-* Item 1
-* Item 2
-  * Item 2a
-  * Item 2b
+* install virtualenv
+  * python -m virtualenv <folder>
+   * Source <folder>/bin/activate (ubuntu)
+   * path/<folder>/script/activate (windows)
+* install Django
+  * install pip
+  * install psycopg2 (config database postgres)
+  * install django-crispy-forms
+  * install django-fontawesome
+  * install django-livereload-server
+  * install Pillow
 
+# Result Apps NgodingYuk!
+## 
 ![Alt Text](https://github.com/Ilyasyasin072/apps-crud-django/blob/master/result/Screenshot_2020-04-12%20Django%20Apps.png)
+![Alt Text](https://github.com/Ilyasyasin072/apps-crud-django/blob/master/result/Screenshot_2020-04-12%20Django%20about.png)
+![Alt Text](https://github.com/Ilyasyasin072/apps-crud-django/blob/master/result/Screenshot_2020-04-09%20Django%20Apps.png))
