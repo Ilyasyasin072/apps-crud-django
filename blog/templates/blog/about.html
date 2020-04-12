@@ -1,4 +1,68 @@
-{% extends "blog/base.html" %}
+{% extends "blog/base_dashboard.html" %}
+{% load static %}
 {% block content %}
-    <h1>About</h1>
+    <style>
+      .advertisement {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        margin-bottom: 30px;
+      }
+      .img1 {
+        height: 100%;
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+      .img {
+        height: 100%;
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+      .about {
+        margin-right: 20px;
+      }
+    </style>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h1 class="title">About Development</h1>
+          <br>
+          <label class="about" for="">
+            Developer is a hub for the latest news, blogs, comment, strategy and advice from leading brands and
+            experts across the apps industry. It provides a free, practical resource that aims to help developers
+            negotiate the industry, access top level advice and ensure they are able to negotiate the industry as
+            effectively and profitably as possible. With thousands of engagements every week, Developer is your
+            perfect partner for integrated advertising campaigns. Get in touch to transform your advertising results.
+          </label>
+        </div>
+        <div class="col-md-6">
+          <img class="img1" src="/media/about/aboutme.svg" alt="">
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img class="img" src="/media/about/personal2.svg" alt="">
+        </div>
+        <div class="col-md-6">
+          <h1 class="title">About Me</h1>
+          <br>
+          <label class="about" for="">
+            Developer is a hub for the latest news, blogs, comment, strategy and advice from leading brands and
+            experts across the apps industry. It provides a free, practical resource that aims to help developers
+            negotiate the industry, access top level advice and ensure they are able to negotiate the industry as
+            effectively and profitably as possible. With thousands of engagements every week, Developer is your
+            perfect partner for integrated advertising campaigns. Get in touch to transform your advertising results.
+          </label>
+        </div>
+      </div>
+    </div>
 {% endblock content%}
