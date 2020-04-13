@@ -89,17 +89,57 @@
     </div>
     <div class="container-data2">
         <div class="row">
-            <div class="col-md-6 col-sm-12">
+            <div class="col-md-6 col-sm-12 de">
                 <div class="card">
                     <div class="card-body">
-                      This is some text within a card body.
+                        <br>
+                        <label for="" class="da">Kategori</label>
+                        {% include "layout/glide.html" %}
                     </div>
                   </div>
             </div>
             <div class="col-md-6 col-sm-12 de">
                 <div class="card">
                     <div class="card-body">
-                      This is some text within a card body.
+                        <h1 class="da" style="font-size: medium;">Topup dan tagihan</h1>
+                    <hr size="10px">
+                    <ul class="nav nav-tabs bordered da" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#tabs-3" role="tab">Pulsa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#tabs-4" role="tab">Paket Data</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#tabs-5" role="tab">Listrik PLN</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active padtop da" id="tabs-3" role="tabpanel">
+                            <div class="media-body padtop">
+                                <div class="row">
+                                 <input type="text" class="form-control da" style="width: 200px;" placeholder=" Rp. Jumlah Pulsa">
+                                 <select class="form-control" style="width: 200px;">
+                                    <option  class="form-control" selected>Small select</option>
+                                    <option  class="form-control">Small a</option>
+                                    <option  class="form-control">Small b</option>
+                                  </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane da padtop" id="tabs-4" role="tabpanel">
+                            <div class="media-body">
+                                <h5 class="mt-0 padtop">Media</h5>
+                                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                            </div>
+                        </div>
+                        <div class="tab-pane da padtop" id="tabs-5" role="tabpanel">
+                            <div class="media-body">
+                                <h5 class="mt-0 padtop">Media heading</h5>
+                                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                            </div>
+                        </div>
+                    </div>
                     </div>
                   </div>
             </div>
