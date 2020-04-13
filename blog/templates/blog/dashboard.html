@@ -1,72 +1,7 @@
 {% extends "blog/base_dashboard.html" %}
 {% load static %}
 {% block content %}
-<style>
-  .container-data {
-    padding-top: 100px;
-    box-shadow:  0 4px 8px 0 rgba(0,0,0,0.1);
-    margin-left: 50px;
-    margin-right: 50px;
-    padding-bottom: 100px;
-  }
-  .container-data2 {
-    padding-top: 100px;
-    box-shadow:  0 4px 8px 0 rgba(0,0,0,0.1);
-    margin-left: 50px;
-    margin-right: 50px;
-    padding-bottom: 100px;
-  }
-  .title {
-    margin-left:40px;
-    font-family: Arial, sans-serif;
-    color:black;
-  }
-  .title2 {
-    margin-left:40px;
-    font-family: Arial, sans-serif;
-  }
-  .dashboard {
-    margin-right: 20px;
-    border-radius: 8px;
-    padding-top: 70px;
-    width: 90%;
-  }
-  .container {
-    height: 50vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-<!--    margin-bottom: 40px;-->
-  }
-  .img {
-   width: 100%;
-   height: 100%;
-  }
-  .img1 {
-   width: 70%;
-   height: 100%;
-  }
-</style>
-  <div class="container">
-    <div class="glide">
-      <div class="glide__track" data-glide-el="track">
-        <ul class="glide__slides">
-          <li class="glide__slide"><img class="img" src="media/slider/slider1.svg" alt=""></li>
-          <li class="glide__slide"><img class="img" src="media/slider/slider2.svg" alt=""></li>
-          <li class="glide__slide"><img class="img" src="media/slider/slider3.svg" alt=""></li>
-          <li class="glide__slide"><img class="img" src="media/slider/slider5.svg" alt=""></li>
-          <li class="glide__slide"><img class="img" src="media/slider/slider6.svg" alt=""></li>
-          <li class="glide__slide"><img class="img1" src="media/slider/slider7.svg" alt=""></li>
-          <li class="glide__slide"><img class="img1" src="media/slider/slider4.svg" alt=""></li>
-        </ul>
-      </div>
-<!--      <div class="glide__arrows" data-glide-el="controls">-->
-<!--        <button class="glide__arrow glide__arrow&#45;&#45;left" data-glide-dir="<"><i class="fas fa-arrow-to-left"></i></button>-->
-<!--        <button class="glide__arrow glide__arrow&#45;&#45;right" data-glide-dir=">">next</button>-->
-<!--      </div>-->
-    </div>
-  </div>
+{% include 'layout/slider.html' %}
   <div class="container-data">
     <div class="row">
       <div class="col-md-6">

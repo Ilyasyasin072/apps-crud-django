@@ -1,0 +1,94 @@
+    .container-data {
+      padding-top: 100px;
+      box-shadow:  0 4px 8px 0 rgba(0,0,0,0.1);
+      margin-left: 50px;
+      margin-right: 50px;
+      padding-bottom: 100px;
+    }
+    .container-data2 {
+      padding-top: 100px;
+      box-shadow:   4px 8px 0 rgba(0,0,0,0.1);
+      margin-left: 50px;
+      margin-right: 50px;
+      padding-bottom: 100px;
+    }
+    .title {
+      margin-left:40px;
+      font-family: Arial, sans-serif;
+      color:black;
+      text-align: justify;
+    }
+    .title2 {
+      margin-left:40px;
+      font-family: Arial, sans-serif;
+      text-align: justify;
+    }
+    .dashboard {
+      margin-right: 20px;
+      border-radius: 8px;
+      padding-top: 70px;
+      width: 90%;
+    }
+    .container-baru {
+      margin-left: 50px;
+      margin-right: 50px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow:  4px 4px 8px 4px rgba(0,0,0,0.1);
+    }
+    .img {
+     margin-top: 50px;
+     width: 90%;
+     height: 100%;
+    }
+    .img1 {
+     width: 70%;
+     height: 100%;
+    }
+    .container-customer {
+        padding-top: 100px;
+        box-shadow:  0 4px 8px 0 rgba(0,0,0,0.1);
+        margin-left: 50px;
+        margin-right: 50px;
+        padding-bottom: 100px;
+        border-radius: 20px;
+        margin-bottom
+        : 20px;
+    }
+    .container-customer1 {
+        /* padding-top: 100px; */
+        box-shadow:  0 4px 8px 0 rgba(0,0,0,0.1);
+        margin-left: 50px;
+        margin-right: 50px;
+        border-radius: 20px;
+    }
+    .container-saja {
+        padding-top: 10px;
+        box-shadow:  0 4px 8px 0 rgba(0,0,0,0.1);
+        margin-left: 50px;
+        margin-right: 10px;
+        padding-bottom: 100px;
+        border-radius: 20px;
+        /* margin-bottom: 10px; */
+    }
+    .container-saja1 {
+        padding-top: 10px;
+        box-shadow:  0 4px 8px 0 rgba(0,0,0,0.1);
+        margin-left: 10px;
+        margin-right: 50px;
+        padding-bottom: 100px;
+        border-radius: 20px;
+        /* margin-bottom: 10px; */
+    }
+    p.ridge {
+        margin-left: 10px;
+        margin-right: 10px;
+        border-style: outset ;
+        }
+    .da {
+        margin-left: 10px;
+        margin-right: 10px;
+    }

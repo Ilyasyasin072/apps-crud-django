@@ -32,3 +32,7 @@ def List(request):
     return render(request, 'customer/list_customer.html', context)
 
 
+def DashboardCustomer(request):
+    return render(request, 'customer/dashboard_customer.html')
+
+

@@ -23,8 +23,8 @@ SECRET_KEY = 'a9_6jmbt6+_-=ft_*=$6@8fb8hd$ka+7!p$h$shqs+2hh=h)np'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
-ALLOWED_HOSTS = []
+TEMPLATE_DEBUG = True
+ALLOWED_HOSTS = ["*"]
 
 # Application definition
 
@@ -130,13 +130,16 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
+    '/app-django/blog/static'
+]
+
 STATIC_URL = '/static/'
 
 # location for upload images
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
-
-CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 # setting redirect login custome
 LOGIN_REDIRECT_URL = 'dashboard'

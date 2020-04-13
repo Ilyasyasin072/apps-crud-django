@@ -38,3 +38,6 @@ def about(request):
 
 def Dashboard(request):
     return render(request, 'blog/dashboard.html')
+
+def PageNotFound(request, exception):
+       return render(request, 'blog/404.html',)
