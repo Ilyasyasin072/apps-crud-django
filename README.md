@@ -15,17 +15,18 @@
 
 # Result Apps Toko Online!
 ## 
+![Alt Text](https://github.com/Ilyasyasin072/apps-crud-django/blob/master/result/Screenshot_2020-04-14%20Django%20Apps.png)
+##
+![Alt Text](https://github.com/Ilyasyasin072/apps-crud-django/blob/master/result/Screenshot_2020-04-14%20Django%20Apps(3).png)
+##
+![Alt Text](https://github.com/Ilyasyasin072/apps-crud-django/blob/master/result/Screenshot_2020-04-14%20Django%20Apps(4).png)
+##
 ![Alt Text](https://github.com/Ilyasyasin072/apps-crud-django/blob/master/result/Screenshot_2020-04-12%20Django%20Apps.png)
 ##
 ![Alt Text](https://github.com/Ilyasyasin072/apps-crud-django/blob/master/result/Screenshot_2020-04-12%20Django%20about.png)
 ##
 ![Alt Text](https://github.com/Ilyasyasin072/apps-crud-django/blob/master/result/Screenshot_2020-04-12%20Django%20Apps(1).png)
 ##
-![Alt Text](https://github.com/Ilyasyasin072/apps-crud-django/blob/master/result/Screenshot_2020-04-14%20Django%20Apps.png)
-##
-![Alt Text](https://github.com/Ilyasyasin072/apps-crud-django/blob/master/result/Screenshot_2020-04-14%20Django%20Apps(3).png)
-##
-![Alt Text](https://github.com/Ilyasyasin072/apps-crud-django/blob/master/result/Screenshot_2020-04-14%20Django%20Apps(4).png)
 #
 ## Database posgress with pgadmin 4
 ![Alt Text](https://github.com/Ilyasyasin072/apps-crud-django/blob/master/result/Screenshot_2020-04-12%20pgAdmin%204.png)
