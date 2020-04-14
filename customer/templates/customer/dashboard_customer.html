@@ -2,14 +2,17 @@
 {% load static %}
 {% block content %}
     <div class="container-alert">
-        <p id="click-me" class="btn btn-sm btn-info">Kategori</p>
+        <!-- <p id="click-me" class="btn btn-sm btn-info">Kategori</p>
     <div id="this">
         <div class="col-md-12">
             <h1>data</h1>
         </div>
-    </div>
-    <div class="alert alert-warning alert-dismissible fade show" role="alert">
-        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+    </div> -->
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>Welcome TokoSerbaAda</strong>
+        <br>
+        <hr size="20px">
+        <h5 class="da">Kami akan Melayani Anda</h5>
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
         <span aria-hidden="true">&times;</span>
         </button>
@@ -19,73 +22,13 @@
       <div class="glide">
         <div class="glide__track" data-glide-el="track">
           <ul class="glide__slides">
-            <li class="glide__slide"><img class="img" src="/media/about/iklan1.jpg" alt=""></li>
-            <li class="glide__slide"><img class="img" src="/media/about/iklan2.jpg" alt=""></li>
-            <li class="glide__slide"><img class="img" src="/media/about/iklan3.jpg" alt=""></li>
-            <li class="glide__slide"><img class="img" src="/media/about/iklan4.jpg" alt=""></li>
+            <li class="glide__slide"><img class="img" src="/media/content/1.svg" alt=""></li>
+            <li class="glide__slide"><img class="img" src="/media/content/2.svg" alt=""></li>
+            <li class="glide__slide"><img class="img" src="/media/content/3.svg" alt=""></li>
+            <li class="glide__slide"><img class="img" src="/media/content/4.svg" alt=""></li>
           </ul>
         </div>
       </div>
-    </div>
-    <div class="">
-        <div class="row">
-            <div class="col-md-6">
-                <!-- <div class="container-saja">
-                <h1 for="" class="da" style="font-size: medium;">Kategori</h1>
-                <hr size="10px">
-                <ul class="nav nav-tabs bordered da" role="tablist">
-                    <li class="nav-item">
-                        <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">First Panel</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Second Panel</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Third Panel</a>
-                    </li>
-                </ul>
-                <div class="tab-content">
-                    <div class="tab-pane active da" id="tabs-1" role="tabpanel">
-                        <p>First Panel</p>
-                    </div>
-                    <div class="tab-pane da" id="tabs-2" role="tabpanel">
-                        <p>Second Panel</p>
-                    </div>
-                    <div class="tab-pane da" id="tabs-3" role="tabpanel">
-                        <p>Third Panel</p>
-                    </div>
-                </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="container-saja1">
-                    <h1 class="da" style="font-size: medium;">Topup dan tagihan</h1>
-                    <hr size="10px">
-                    <ul class="nav nav-tabs bordered da" role="tablist">
-                        <li class="nav-item">
-                            <a class="nav-link active" data-toggle="tab" href="#tabs-3" role="tab">First Panel</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#tabs-4" role="tab">Second Panel</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#tabs-5" role="tab">Third Panel</a>
-                        </li>
-                    </ul>
-                    <div class="tab-content">
-                        <div class="tab-pane active da" id="tabs-3" role="tabpanel">
-                            <p>First Panel</p>
-                        </div>
-                        <div class="tab-pane da" id="tabs-4" role="tabpanel">
-                            <p>Second Panel</p>
-                        </div>
-                        <div class="tab-pane da" id="tabs-5" role="tabpanel">
-                            <p>Third Panel</p>
-                        </div>
-                    </div>
-                </div> -->
-            </div>
-        </div>
     </div>
     <div class="container-data2">
         <div class="row">
@@ -144,6 +87,53 @@
                   </div>
             </div>
         </div>
+    </div>
+    <div class="content">
+        {% with ''|center:2 as range %}
+              {% for _ in range %}
+              <br>
+            <div class="col-lg-12">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="/media/content/undraw_android_jr64.svg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <p class="content-isi">Antigores Antishock</p>
+                                <p class="content-rp">Rp.20.000</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="/media/content/undraw_camera_mg5h.svg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="content-isi">Antigores Antishock</p>
+                                <p class="content-rp">Rp.20.000</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="/media/content/undraw_electric_car_b7hl.svg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="content-isi">Antigores Antishock</p>
+                                <p class="content-rp">Rp.20.000</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="/media/content/undraw_web_shopping_dd4l.svg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="content-isi">Antigores Antishock</p>
+                                <p class="content-rp">Rp.20.000</p>
+                            </div>
+                          </div>
+                    </div>
+                  </div>
+            </div>
+            {% endfor %}
+          {% endwith %}
     </div>
     <script
 			  src="https://code.jquery.com/jquery-3.4.1.js"

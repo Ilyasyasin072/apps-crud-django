@@ -1,5 +1,5 @@
-# Apps NgodingYuk!! with Django And Database Postgres
-## plugin support apps ngodingyukk!
+# Apps Toko Online!! with Django And Database Postgres
+## plugin support apps Toko Online!
 * install virtualenv
   * python -m virtualenv <folder>
    * Source <folder>/bin/activate (ubuntu)
@@ -11,8 +11,9 @@
   * install django-fontawesome
   * install django-livereload-server
   * install Pillow
+  * install boostraps4
 
-# Result Apps NgodingYuk!
+# Result Apps Toko Online!
 ## 
 ![Alt Text](https://github.com/Ilyasyasin072/apps-crud-django/blob/master/result/Screenshot_2020-04-12%20Django%20Apps.png)
 ##

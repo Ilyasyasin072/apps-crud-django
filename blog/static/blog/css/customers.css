@@ -11,7 +11,7 @@
     /* box-shadow:   4px 8px 0 rgba(0,0,0,0.1); */
     margin-left: 50px;
     margin-right: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
   }
   /* child  */
   .container-data2 .de {
@@ -117,4 +117,29 @@
 
   .card {
       border-radius: 10px;
+  }
+  .content {
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-bottom: 100px;
+  }
+  .card-img-top {
+    height: 100%;
+    cursor: pointer;
+  }
+
+  .content-isi {
+    font-size: medium;
+    text-align: left;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-bottom: 1px;
+    cursor: pointer;
+  }
+
+  .content-rp{
+    font-size: medium;
+    text-align: left;
+    font-weight: bold;
+    color: orange;
   }
