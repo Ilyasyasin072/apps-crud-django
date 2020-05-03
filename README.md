@@ -1,4 +1,4 @@
-# Apps Toko Online!! with Django And Database Postgres
+# Apps Crud!! with Django And Database Postgres
 ## plugin support apps Toko Online!
 * install virtualenv
   * python -m virtualenv <folder>
