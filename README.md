@@ -1,5 +1,5 @@
 # Apps Crud!! with Django And Database Postgres
-## plugin support apps Toko Online!
+## plugin support apps Crud!
 * install virtualenv
   * python -m virtualenv <folder>
    * Source env_name/bin/activate (ubuntu)
