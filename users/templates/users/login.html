@@ -1,4 +1,4 @@
-{% extends "blog/base.html" %}
+{% extends "users/base.html" %}
 {% load crispy_forms_tags %}
 {% load static %}
 {% block content %}
@@ -20,40 +20,94 @@
      width: 70%;
      height: 100%;
     }
+    .login {
+      width: 100%;
+      padding-top: 100px;
+    }
+    .login-dashboard {
+      padding-top: 100px;
+    }
+    .content-section {
+      border-radius: 20px;
+    }
+    .jumbotron-fluid {
+      border-radius: 20px;
+    }
+    .logo-avatar {
+      width: 50px;
+      border-radius: 50%;
+    }
+    .font-login {
+    font-family: "Times New Roman", Times, serif;
+    }
   </style>
-    <div class="content-section">
+  <div class="row">
+    <div class="col-md-6">
+      <img class="login" src="/media/login/login2.svg" alt="">
+<!--&lt;!&ndash;      <div class="container-slider">&ndash;&gt;-->
+<!--      <div class="glide">-->
+<!--        <div class="glide__track" data-glide-el="track">-->
+<!--          <ul class="glide__slides">-->
+<!--          <li class="glide__slide"><img class="login" src="/media/slider/slider1.svg" alt=""></li>-->
+<!--          <li class="glide__slide"><img class="login" src="/media/slider/slider2.svg" alt=""></li>-->
+<!--          <li class="glide__slide"><img class="login" src="/media/slider/slider3.svg" alt=""></li>-->
+<!--          <li class="glide__slide"><img class="login" src="/media/slider/slider5.svg" alt=""></li>-->
+<!--          <li class="glide__slide"><img class="login" src="/media/slider/slider6.svg" alt=""></li>-->
+<!--          <li class="glide__slide"><img class="login" src="/media/slider/slider7.svg" alt=""></li>-->
+<!--          <li class="glide__slide"><img class="login" src="/media/slider/slider4.svg" alt=""></li>-->
+<!--          </ul>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--&lt;!&ndash;    </div>&ndash;&gt;-->
+      <div class="container">
+        <br>
+        <h1>Welcome</h1>
+        <h2>Les't Join With Us</h2>
+      </div>
+    </div>
+    <div class="col-md-6 login-dashboard">
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <center>
+          <h1 class="display-4 font-login"><img class="logo-avatar" src="/media/login/avatar.svg" alt="">&nbsp;Login</h1>
+          <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+          </center>
+        </div>
+      </div>
+      <div class="content-section">
         <form action="" method="POST">
             {% csrf_token %}
             <fieldset class="form-group">
-                <legend class="border-bottom mb-4">Login</legend>
                 {{ form|crispy }}
             </fieldset>
             <div class="form-group">
                 <button class="btn btn-outline btn-info">Login</button>
             </div>
         </form>
-    </div>
-    <div class="container-slider">
-      <div class="glide">
-        <div class="glide__track" data-glide-el="track">
-          <ul class="glide__slides">
-          <li class="glide__slide"><img class="img" src="/media/slider/slider1.svg" alt=""></li>
-          <li class="glide__slide"><img class="img" src="/media/slider/slider2.svg" alt=""></li>
-          <li class="glide__slide"><img class="img" src="/media/slider/slider3.svg" alt=""></li>
-          <li class="glide__slide"><img class="img" src="/media/slider/slider5.svg" alt=""></li>
-          <li class="glide__slide"><img class="img" src="/media/slider/slider6.svg" alt=""></li>
-          <li class="glide__slide"><img class="img1" src="/media/slider/slider7.svg" alt=""></li>
-          <li class="glide__slide"><img class="img1" src="/media/slider/slider4.svg" alt=""></li>
-          </ul>
-        </div>
       </div>
     </div>
+  </div>
+<!--    <div class="container-slider">-->
+<!--      <div class="glide">-->
+<!--        <div class="glide__track" data-glide-el="track">-->
+<!--          <ul class="glide__slides">-->
+<!--          <li class="glide__slide"><img class="img" src="/media/slider/slider1.svg" alt=""></li>-->
+<!--          <li class="glide__slide"><img class="img" src="/media/slider/slider2.svg" alt=""></li>-->
+<!--          <li class="glide__slide"><img class="img" src="/media/slider/slider3.svg" alt=""></li>-->
+<!--          <li class="glide__slide"><img class="img" src="/media/slider/slider5.svg" alt=""></li>-->
+<!--          <li class="glide__slide"><img class="img" src="/media/slider/slider6.svg" alt=""></li>-->
+<!--          <li class="glide__slide"><img class="img1" src="/media/slider/slider7.svg" alt=""></li>-->
+<!--          <li class="glide__slide"><img class="img1" src="/media/slider/slider4.svg" alt=""></li>-->
+<!--          </ul>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
   <script src="{% static 'blog/js/glide.min.js' %}"></script>
   <script>
     const config = {
         type: 'carousel',
         autoplay: 2000,
-        perView: 3,
+        perView: 1,
         breakpoints: {
           600: {
             perView: 2
