@@ -2,8 +2,8 @@
 ## plugin support apps Toko Online!
 * install virtualenv
   * python -m virtualenv <folder>
-   * Source <folder>/bin/activate (ubuntu)
-   * path/<folder>/script/activate (windows)
+   * Source env_name/bin/activate (ubuntu)
+   * path/env_name/script/activate (windows)
 * install Django
   * install pip
   * install psycopg2 (config database postgres)
