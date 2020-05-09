@@ -153,4 +153,4 @@ MEDIA_URL = '/media/'
 
 # setting redirect login custome
 LOGIN_REDIRECT_URL = 'dashboard_customer'
-LOGIN_URL = 'login'
+LOGIN_URL = 'dashboard_home'

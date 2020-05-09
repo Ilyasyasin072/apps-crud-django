@@ -1,66 +1,106 @@
-{% extends "blog/base_dashboard.html" %}
+
 {% load static %}
-{% block content %}
-{% include 'layout/slider.html' %}
-  <div class="container-data">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<!--    <link rel="stylesheet" type="text/css" href="{% static 'blog/main.css' %}">-->
+    <!-- Required Core Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="{% static 'blog/glide.core.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'blog/glide.theme.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'blog/css/fontawesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'blog/css/customers.css' %}">
+    {% if title %}
+      <title>Django {{ title }}</title>
+      {% else %}
+      <title>Django Apps </title>
+      {% endif %}
+  </head>
+<style>
+  .picture {
+    width: 95%;
+  }
+  .picture-top {
+    width: 500px;
+    margin-left: 300px;
+  }
+  .logo-dashboard {
+    padding-top:150px;
+    margin-left: 500px;
+  }
+  .title-label {
+    margin-left: 200px;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .child-title {
+    margin-left: 200px;
+    font-size: 30px;
+    color: #E43F5A;
+    font-family: Arial, Helvetica, sans-serif;
+   }
+  .parent-child {
+    margin-top: 50px;
+    margin-left: 200px;
+    font-size: 20px;
+    opacity: 0.5;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .child {
+    margin-left: 200px;
+    font-size: 20px;
+    opacity: 0.5;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .started-btn {
+    margin-top: 50px;
+    margin-left: 200px;
+    color: white;
+    width: 200px;
+    border-radius: 20px;
+    background-color: #E43F5A
+  }
+
+</style>
+  <body style="overflow: hidden;">
     <div class="row">
-      <div class="col-md-6">
-        <strong><h1 class="title">Mendefinisikan kebutuhan</h1></strong>
-        <br>
-          <h5 class="title2">
-            Aplikasi yang akan dibuat nantinya akan di jalankan pada platform apa ?
-            Contoh, aplikasi yang kita buat ini akan digunakan pada platform web. Maka nantinya program akan dijalankan
-            pada komputer ber os : windows versi berapa, linux, mac os dan lainnya dengan browser tertentu. Selain itu
-            kita juga butuh komputer dan tools lainnya untuk membuat programnya.</h5>
-        <br>
-        <strong><h1 class="title">Merancang flowchart</h1></strong>
-        <br>
-          <h5 class="title2">
-            Setelah kebutuhan program sudah terpenuhi. Kita buat alur programmnya.
-            Kebanyakan programmer membuat flowchart terlebih dahulu sebelum membuat
-            sebuah program aplikasi</h5>
-      </div>
-      <div class="col-md-6">
-        <img class="dashboard" src="" alt="" src="/media/dashboard/dashboard2.svg">
-      </div>
+    <div class="col-md-6">
+      <img class="logo-dashboard" src="/media/logo/logo1.png" alt="">
+      <h1 class="title-label">We Create Design</h1>
+      <h1 class="child-title">Mobile And Web</h1>
+
+      <h3 class="parent-child">Kami Hadir Untuk Anda</h3>
+      <h3 class="child">Mendapatkan Design Yang Menarik</h3>
+
+      <form action="{% url 'login' %}">
+        <button class="btn started-btn" href="">Get Started</button>
+      </form>
+
+    </div>
+    <div class="col-md-6">
+      <img src="/media/logo/logo2.png" class="picture-top" alt="">
+      <img src="/media/logo/picture_dashboard.png" class="picture" alt="">
     </div>
   </div>
-  <br>
-  <div class="container-data2">
-    <div class="row">
-      <div class="col-md-6">
-        <strong><h1 class="title">Mendefinisikan kebutuhan</h1></strong>
-        <br>
-          <h5 class="title2">
-            Aplikasi yang akan dibuat nantinya akan di jalankan pada platform apa ?
-            Contoh, aplikasi yang kita buat ini akan digunakan pada platform web. Maka nantinya program akan dijalankan
-            pada komputer ber os : windows versi berapa, linux, mac os dan lainnya dengan browser tertentu. Selain itu
-            kita juga butuh komputer dan tools lainnya untuk membuat programnya.</h5>
-        <br>
-        <strong><h1 class="title">Merancang flowchart</h1></strong>
-        <br>
-          <h5 class="title2">
-            Setelah kebutuhan program sudah terpenuhi. Kita buat alur programmnya.
-            Kebanyakan programmer membuat flowchart terlebih dahulu sebelum membuat
-            sebuah program aplikasi</h5>
-      </div>
-      <div class="col-md-6">
-        <img class="dashboard" src="" alt="" src="/media/dashboard/dashboard.svg">
-      </div>
-    </div>
-  </div>
-  <script src="{% static 'blog/js/glide.min.js' %}"></script>
-  <script>
-    const config = {
-        type: 'carousel',
-        autoplay: 2000,
-        perView: 3,
-        breakpoints: {
-          600: {
-            perView: 2
-          }
+  </body>
+  </html>
+<script src="{% static 'blog/js/glide.min.js' %}"></script>
+<script>
+  const config = {
+      type: 'carousel',
+      autoplay: 2000,
+      perView: 3,
+      breakpoints: {
+        600: {
+          perView: 2
         }
-    }
-    new Glide('.glide', config).mount()
-  </script>
-{% endblock content %}
+      }
+  }
+  new Glide('.glide', config).mount()
+</script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script type="text/javascript" href="{% static 'blog/js/fontawesome.min.js' %}">
