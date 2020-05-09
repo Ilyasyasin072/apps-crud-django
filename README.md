@@ -15,6 +15,8 @@
 
 # Result Apps
 ##
+![Alt Text](https://github.com/Ilyasyasin072/apps-crud-django/blob/master/result/New%20Dashboard.png)
+##
 ![Alt Text](https://github.com/Ilyasyasin072/apps-crud-django/blob/master/result/New_Login.png)
 ## 
 ![Alt Text](https://github.com/Ilyasyasin072/apps-crud-django/blob/master/result/Screenshot_2020-04-14%20Django%20Apps.png)
